@@ -1,8 +1,4 @@
 import {
-  c,
-  python,
-  java,
-  cpp,
   javascript,
   html,
   css,
@@ -10,16 +6,14 @@ import {
   tailwind,
   nodejs,
   git,
-  edunet,
-  weatherpedia,
-  termpw,
-  payloadmaster,
   threejs,
-  mhft,
-  sketcher,
-  mathwork,
-  CompileVortex,
-  eduskill,
+  Express,
+  Mongo,
+  lspl,
+  arena,
+  avish,
+  webArena,
+  atk,
 } from "../assets";
 
 export const navLinks = [
@@ -38,10 +32,10 @@ export const navLinks = [
 ];
 
 export const services = [
-  { title: "C", icon: c },
-  { title: "C++", icon: cpp },
-  { title: "Python", icon: python },
-  { title: "Java", icon: java },
+  { title: "React", icon: reactjs },
+  { title: "NodeJs", icon: nodejs },
+  { title: "Express", icon: Express },
+  { title: "MongoDB", icon: Mongo },
 ];
 
 export const technologies = [
@@ -53,118 +47,90 @@ export const technologies = [
   { name: "Node JS", icon: nodejs },
   { name: "Three JS", icon: threejs },
   { name: "git", icon: git },
+  { name: "Mongo", icon: Mongo },
 ];
 
 export const experiences = [
   {
-    title: "AI/ML Intern",
-    company_name: "EduSkill Foundation | AWS Academy | AICTE",
-    icon: eduskill,
+    title: "Senior Associate",
+    company_name: "Learning Spiral Pvt. Ltd, Raipur, C.G",
+    icon: lspl,
     iconBg: "#161329",
-    date: "Sep 2023 - Nov 2023",
+    date: "JUNE 2020  - JULY 2022 ( 2-YEAR)",
     points: [
-      "Acquired hands-on knowledge of AWS Cloud Foundation, delving into cloud infrastructure, services, and deployment.",
-      "also gaining a solid foundation in Machine Learning, covering topics like algorithms, data analysis, and model building.",
+      "Annotated and QC-processed 3D LiDAR data and images for machine learning projects.",
+      "Improved annotation efficiency by introducing custom tooling scripts.",
     ],
   },
   {
-    title: "Mathwork Ai Virtual Intern",
-    company_name: "Mathwork | AICTE",
-    icon: mathwork,
+    title: "Web Developer Intern",
+    company_name: "BlueChips Solutions, Bangalore",
+
     iconBg: "#161329",
-    date: "May 2023 - Sep 2023",
+    date: "MARCH  2022 - AUG 2022(6 - Month)",
     points: [
-      "Completed virtual internship, gaining a strong foundation in MATLAB, including data analysis and processing.",
-      "Acquired practical skills in image and signal processing, including segmentation, batch processing, and spectral analysis.",
-      "Developed expertise in machine learning models for clustering, classification, and regression, and customized deep learning techniques for image classification.",
+      "Built a dynamic website for an NGO using PHP and MySQL.",
+      "Collaborated in a team of 3 developers, delivering the project before the deadline.",
     ],
   },
   {
-    title: "Artificial Intelligence Intern",
-    company_name: "Edunet Foundation | IBM SkillsBuild | AICTE",
-    icon: edunet,
+    title: "Full Stack Developer",
+    company_name: "Arena Animation, Raipur C.G",
+    icon: arena,
     iconBg: "#161329",
-    date: "June 2023 - July 2023",
+    date: "AUG - 2022 - MARCH-2025(2 Year 8 months)",
     points: [
-      "Engineered a comprehensive Mental Health Fitness Tracker ML model utilizing Python and scikit-learn.",
-      "Maximized the model's performance by refining model parameters and employing ensemble methods, yielding an outstanding accuracy percentage of 98.50%.",
-      "Leveraged 12 regression algorithms to attain precise outcomes in analyzing and predicting mental fitness levels across 150+ countries.",
+      "Developed and maintained responsive full-stack web applications using React, Node.js, and MongoDB.",
+      "Redesigned Arena Raipur’s official website, improving mobile performance by 35%.",
+    ],
+  },
+
+  {
+    title: "Senior Developer",
+    company_name: "Avish Educom Durg C.G",
+    icon: avish,
+    iconBg: "#161329",
+    date: "MARCH - 2025 - PRESENT",
+    points: [
+      "Developed and maintained responsive full-stack web applications using React, Node.js, and MongoDB.",
+      "Faculty ",
     ],
   },
 ];
 
 export const projects = [
   {
-    name: "WeatherPedia",
+    name: "Arena Raipur’s official website,",
     description:
-      "Web-based platform that allows users to access weather information for their location by entering it in the search field",
+      "Web-based platform that allows users to access Course information.and user Can Generate Enqueries throw form section",
     tags: [
       { name: "Javascript", color: "blue-text-gradient" },
-      { name: "HTML", color: "green-text-gradient" },
+      { name: "React", color: "yellow-text-gradient" },
       { name: "bootstrap 5.3.0", color: "pink-text-gradient" },
-      { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
     ],
-    image: weatherpedia,
+    image: webArena,
     source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
   },
   {
-    name: "Terminal Like Portfolio Website",
+    name: "Atk Clothing E-comm Website",
     description:
-      "A terminal themed portfolio website that allows users to type into the terminal and use commands like a real terminal.",
+      "A e commerce Website for a Brand ATK that allows users to shop clothing Product and all ecommerce Features with Redux state management Setup. ",
     tags: [
-      { name: "HTML", color: "blue-text-gradient" },
-      { name: "css", color: "green-text-gradient" },
-      { name: "Javascript", color: "pink-text-gradient" },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Redux-Tolkit", color: "green-text-gradient" },
+      { name: "State Management", color: "pink-text-gradient" },
+      { name: "ECommerce", color: "pink-text-gradient" },
     ],
-    image: termpw,
+    image: atk,
     source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
   },
-  {
-    name: "Mental Health Fitness Tracker",
-    description:
-      "ML model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data.",
-    tags: [
-      { name: "Machine Learning", color: "blue-text-gradient" },
-      { name: "Jupyter Notebook", color: "green-text-gradient" },
-      { name: "Regression Algorithms", color: "pink-text-gradient" },
-    ],
-    image: mhft,
-    source_code_link:
-      "https://github.com/lohitkolluri/mental_health_fitness_tracker",
-  },
-  {
-    name: "PayloadMaster",
-    description:
-      "Tool to automate payload creation using the Metasploit framework",
-    tags: [
-      { name: "shell", color: "blue-text-gradient" },
-    ],
-    image: payloadmaster,
-    source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
-  },
-  {
-    name: "CompileVortex",
-    description:
-      "Tool to automate payload creation using the Metasploit framework",
-    tags: [
-      { name: "Javascript", color: "blue-text-gradient" },
-      { name: "CSS", color: "green-text-gradient" },
-      { name: "HTML", color: "pink-text-gradient" },
-    ],
-    image: CompileVortex,
-    source_code_link: "https://github.com/lohitkolluri/CompileVortex",
-  },
-  {
-    name: "Sketcher",
-    description:
-      "Convert an input image to a pencil sketch using OpenCV and Matplotlib libraries.",
-    tags: [
-      { name: "OpenCV", color: "blue-text-gradient" },
-      { name: "Matplotlib", color: "green-text-gradient" },
-      { name: "Python", color: "pink-text-gradient" },
-    ],
 
-    image: sketcher,
-    source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
+  {
+    name: "Masukam Info Tech",
+    description:
+      "Tool to automate payload creation using the Metasploit framework",
+    tags: [{ name: "shell", color: "blue-text-gradient" }],
+    image: webArena,
+    source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
   },
 ];

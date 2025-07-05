@@ -1,21 +1,16 @@
 // Import company logos
-import mathwork from "./company/mathwork.png";
-import edunet from "./company/edunet.png";
-import eduskill from "./company/eduskill.png";
+import lspl from "./company/lspl.jpg";
+import arena from "./company/arena.png";
+import avish from "./company/avish.png";
 
 // Import tech stack images
-import python from "./tech-stack/python.png";
-import c from "./tech-stack/c.png";
-import cpp from "./tech-stack/cpp.png";
-import java from "./tech-stack/java.png";
+import Mongo from "./tech/mongo.png";
+import Express from "./tech/express.png";
 
 // Import project images
-import weatherpedia from "./projects/WeatherPedia.png";
-import termpw from "./projects/termpw.png";
-import payloadmaster from "./projects/payloadmaster.png";
-import mhft from "./projects/mhft.png";
-import sketcher from "./projects/sketcher.png";
-import CompileVortex from "./projects/CompileVortex.png";
+
+import webArena from "./projects/webArena.png";
+import atk from "./projects/atk.png";
 
 // Import tech logos
 import css from "./tech/css.png";
@@ -34,12 +29,6 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 export {
-  mathwork,
-  edunet,
-  python,
-  c,
-  cpp,
-  java,
   github,
   css,
   git,
@@ -49,14 +38,14 @@ export {
   reactjs,
   tailwind,
   threejs,
-  weatherpedia,
-  termpw,
-  payloadmaster,
-  mhft,
-  sketcher,
-  CompileVortex,
   logo,
   menu,
   close,
-  eduskill,
+  Mongo,
+  Express,
+  lspl,
+  arena,
+  avish,
+  webArena,
+  atk,
 };

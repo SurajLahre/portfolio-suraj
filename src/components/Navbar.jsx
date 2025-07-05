@@ -1,31 +1,39 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { close, logo, menu } from '../assets';
-import { navLinks } from '../constants';
-import { styles } from '../styles';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { close, menu } from "../assets";
+import { navLinks } from "../constants";
+import { styles } from "../styles";
 
 const Navbar = () => {
-  const [active, setActive] = useState('');
+  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
   const toggleResume = () => {
-    const resumeUrl = '/Resume.pdf';
+    const resumeUrl = "/Resume.docx";
     window.open(resumeUrl);
   };
 
   useEffect(() => {
     if (toggle) {
-      setActive('');
+      setActive("");
     }
   }, [toggle]);
 
   const renderNavLinks = (isSecondary) => (
-    <ul className={`list-none ${isSecondary ? 'flex sm:hidden' : 'hidden sm:flex'} flex-row gap-6`}>
+    <ul
+      className={`list-none ${
+        isSecondary ? "flex sm:hidden" : "hidden sm:flex"
+      } flex-row gap-6`}
+    >
       {navLinks.map((link) => (
         <li
           key={link.id}
           className={`${
-            active === link.title ? 'text-white' : isSecondary ? 'text-secondary' : 'text-white'
+            active === link.title
+              ? "text-white"
+              : isSecondary
+              ? "text-secondary"
+              : "text-white"
           } hover:text-white text-[20px] font-medium cursor-pointer`}
           onClick={() => {
             setActive(link.title);
@@ -39,7 +47,7 @@ const Navbar = () => {
       ))}
       <li
         className={`text-${
-          isSecondary ? 'secondary' : 'white'
+          isSecondary ? "secondary" : "white"
         } hover:text-white text-[20px] font-medium cursor-pointer`}
       >
         <button onClick={toggleResume}>Resume</button>
@@ -57,14 +65,13 @@ const Navbar = () => {
             to="/"
             className="flex items-center gap-2"
             onClick={() => {
-              setActive('');
+              setActive("");
               window.scrollTo(0, 0);
             }}
           >
-            <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
             <p className="text-white text-[20px] font-bold cursor-pointer flex">
-              LOHIT&nbsp;
-              <span className="sm:block hidden">KOLLURI</span>
+              SURAJ&nbsp;
+              <span className="sm:block hidden">LAHRE</span>
             </p>
           </Link>
           {renderNavLinks(false)}
@@ -77,7 +84,7 @@ const Navbar = () => {
             />
             <div
               className={`p-4 black-gradient absolute top-14 right-0 mx-2 my-2 min-w-[120px] z-10 rounded-xl foggy-glass ${
-                toggle ? 'flex' : 'hidden'
+                toggle ? "flex" : "hidden"
               }`}
             >
               {renderNavLinks(true)}
