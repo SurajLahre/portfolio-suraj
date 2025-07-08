@@ -6,32 +6,6 @@
 
 </div>
 
-## ✨ Features
-
-<div align="center">
-
-```mermaid
-mindmap
-  root((Portfolio Website))
-    User Interface
-      Responsive Design
-      Smooth Animations
-      Interactive 3D Elements
-    Sections
-      About Me
-      Experience
-      Projects
-      Contact
-    Technical Features
-      React with Vite
-      Tailwind CSS Styling
-      EmailJS Integration
-    Integrations
-       Email Contact
-      Project Showcase
-```
-
-</div>
 
 ## 🚀 Demo
 
